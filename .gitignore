@@ -1,0 +1,7 @@
+# -*- mode: gitignore; -*-
+# emacs
+*~
+\#*\#
+
+# node
+node_modules/
