@@ -9,21 +9,10 @@
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" href="./reveal/dist/reveal.css"/>
+<link rel="stylesheet" href="./reveal.js/dist/reveal.css"/>
 
-<link rel="stylesheet" href="./reveal/dist/theme/beige.css" id="theme"/>
+<link rel="stylesheet" href="./reveal.js/dist/theme/beige.css" id="theme"/>
 
-
-<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-<script>
-    if( window.location.search.match( /print-pdf/gi ) ) {
-        var link = document.createElement( 'link' );
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = './reveal/css/print/pdf.css';
-        document.getElementsByTagName( 'head' )[0].appendChild( link );
-    }
-</script>
 </head>
 <body>
 <div class="reveal">
@@ -32,8 +21,8 @@
 </section>
 
 <section>
-<section id="slide-orge3fa56c">
-<h2 id="orge3fa56c"><span class="section-number-2">1.</span> Context: SFB1451</h2>
+<section id="slide-orgafa0ffe">
+<h2 id="orgafa0ffe"><span class="section-number-2">1.</span> Context: SFB1451</h2>
 <ul>
 <li>Collaborative Research Centre (Sonderforschungsbereich)</li>
 <li>19 research projects across 5 institutions</li>
@@ -45,10 +34,10 @@
 </section>
 </section>
 <section>
-<section id="slide-org6976081">
-<h2 id="org6976081"><span class="section-number-2">2.</span> Data storage: landscape</h2>
+<section id="slide-org7abf3f3">
+<h2 id="org7abf3f3"><span class="section-number-2">2.</span> Data storage: landscape</h2>
 
-<div id="org34864c1" class="figure">
+<div id="orgabbff94" class="figure">
 <p><img src="./images/inm-seminar-nov22/drawings-inm-seminar-nov22.png" alt="drawings-inm-seminar-nov22.png" />
 </p>
 </div>
@@ -56,8 +45,8 @@
 </section>
 </section>
 <section>
-<section id="slide-org4719c05">
-<h2 id="org4719c05"><span class="section-number-2">3.</span> Reasons to move data</h2>
+<section id="slide-org0a61f39">
+<h2 id="org0a61f39"><span class="section-number-2">3.</span> Reasons to move data</h2>
 <ul>
 <li>backup</li>
 <li>share with collaborators</li>
@@ -69,8 +58,8 @@
 </section>
 </section>
 <section>
-<section id="slide-orged4c097">
-<h2 id="orged4c097"><span class="section-number-2">4.</span> Not just deposition</h2>
+<section id="slide-org82c833b">
+<h2 id="org82c833b"><span class="section-number-2">4.</span> Not just deposition</h2>
 <ul>
 <li><b>Where data go to die?</b> <i>Data archive.</i></li>
 <li><b>How data are reincarnated?</b> <i>Re-used from archives.</i></li>
@@ -82,7 +71,7 @@
 </p>
 
 </section>
-<section id="slide-orged4c097-split">
+<section id="slide-org82c833b-split">
 
 <blockquote >
 <p>
@@ -104,15 +93,15 @@ Dempsey <i>et al.</i> (2022), <a href="https://doi.org/10.1162/99608f92.44d21b86
 </section>
 </section>
 <section>
-<section id="slide-org00aadb9">
-<h2 id="org00aadb9"><span class="section-number-2">5.</span> DataLad and the distributed landscape</h2>
+<section id="slide-orge9fe18d">
+<h2 id="orge9fe18d"><span class="section-number-2">5.</span> DataLad and the distributed landscape</h2>
 <div class="outline-text-2" id="text-5">
 </div>
 </section>
-<section id="slide-orgf894be4">
-<h3 id="orgf894be4"><span class="section-number-3">5.1.</span> Decentralization built in</h3>
+<section id="slide-org7d1f855">
+<h3 id="org7d1f855"><span class="section-number-3">5.1.</span> Decentralization built in</h3>
 
-<div id="org0ee4c72" class="figure">
+<div id="orgfeb0344" class="figure">
 <p><img src="./images/inm-seminar-nov22/drawing-distributed.png" alt="drawing-distributed.png" />
 </p>
 </div>
@@ -126,8 +115,8 @@ git annex whereis this/file.dat
 </pre>
 
 </section>
-<section id="slide-orga3835af">
-<h3 id="orga3835af"><span class="section-number-3">5.2.</span> Everything is versioned</h3>
+<section id="slide-org51e32a2">
+<h3 id="org51e32a2"><span class="section-number-3">5.2.</span> Everything is versioned</h3>
 <pre  class="example" >
 ❱ git log --pretty=reference
 2e98e2c ([DATALAD RUNCMD] Convert to greyscale, 2022-05-23)
@@ -144,8 +133,8 @@ No ambiguity
 </p>
 
 </section>
-<section id="slide-org7e01bd0">
-<h3 id="org7e01bd0"><span class="section-number-3">5.3.</span> Reproducibility strengthens trust</h3>
+<section id="slide-orgc98bd45">
+<h3 id="orgc98bd45"><span class="section-number-3">5.3.</span> Reproducibility strengthens trust</h3>
 <pre  class="example" >
 [DATALAD RUNCMD] Convert to greyscale
 
@@ -172,10 +161,10 @@ Self-writing lab notebook / actionable provenance records
 </p>
 
 </section>
-<section id="slide-org4f9bdc6">
-<h3 id="org4f9bdc6"><span class="section-number-3">5.4.</span> Lightweight datasets (content separation)</h3>
+<section id="slide-org36eb448">
+<h3 id="org36eb448"><span class="section-number-3">5.4.</span> Lightweight datasets (content separation)</h3>
 
-<div id="org1942650" class="figure">
+<div id="org8976c55" class="figure">
 <p><img src="./images/inm-seminar-nov22/lightweight-datasets.png" alt="lightweight-datasets.png" />
 </p>
 </div>
@@ -187,15 +176,15 @@ Share datasets without content (metadata) to balance privacy and visibility (dra
 </section>
 </section>
 <section>
-<section id="slide-org84943b5">
-<h2 id="org84943b5"><span class="section-number-2">6.</span> Pieces of the system</h2>
+<section id="slide-org2d79f42">
+<h2 id="org2d79f42"><span class="section-number-2">6.</span> Pieces of the system</h2>
 <div class="outline-text-2" id="text-6">
 </div>
 </section>
-<section id="slide-org77bb391">
-<h3 id="org77bb391"><span class="section-number-3">6.1.</span> New modes of deposition</h3>
+<section id="slide-org0d90b7a">
+<h3 id="org0d90b7a"><span class="section-number-3">6.1.</span> New modes of deposition</h3>
 
-<div id="org5ea0317" class="figure">
+<div id="org3110639" class="figure">
 <p><img src="./images/inm-seminar-nov22/drawing-publish-mode.png" alt="drawing-publish-mode.png" />
 </p>
 </div>
@@ -205,8 +194,8 @@ Convenience methods for WebDAV access &amp; filetree publication
 </p>
 
 </section>
-<section id="slide-org5ab47b4">
-<h3 id="org5ab47b4"><span class="section-number-3">6.2.</span> Encryption</h3>
+<section id="slide-org1ced95a">
+<h3 id="org1ced95a"><span class="section-number-3">6.2.</span> Encryption</h3>
 <ul>
 <li>Remote data can be encrypted at rest</li>
 <li>Encryption happens on <code>push</code>, decryption on <code>get</code></li>
@@ -215,8 +204,8 @@ Convenience methods for WebDAV access &amp; filetree publication
 </ul>
 
 </section>
-<section id="slide-org1c1f1c7">
-<h3 id="org1c1f1c7"><span class="section-number-3">6.3.</span> DataLad - MetaLad</h3>
+<section id="slide-org5cbd897">
+<h3 id="org5cbd897"><span class="section-number-3">6.3.</span> DataLad - MetaLad</h3>
 <ul>
 <li>metadata comes from <i>extractors</i> (provided or custom)</li>
 <li>comes from an identified dataset version</li>
@@ -231,10 +220,10 @@ See: <a href="https://github.com/datalad/datalad-metalad">github.com/datalad/dat
 </p>
 
 </section>
-<section id="slide-org9208fa3">
-<h3 id="org9208fa3"><span class="section-number-3">6.4.</span> Catalog</h3>
+<section id="slide-orge9f4598">
+<h3 id="orge9f4598"><span class="section-number-3">6.4.</span> Catalog</h3>
 
-<div id="orgd915215" class="figure">
+<div id="org2c9fce2" class="figure">
 <p><img src="./images/inm-seminar-nov22/catalog.png" alt="catalog.png" />
 </p>
 </div>
@@ -244,10 +233,10 @@ See example: <a href="https://datalad.github.io/datalad-catalog/">datalad.github
 </p>
 
 </section>
-<section id="slide-orga2c541a">
-<h3 id="orga2c541a"><span class="section-number-3">6.5.</span> Gooey</h3>
+<section id="slide-orgde7f91a">
+<h3 id="orgde7f91a"><span class="section-number-3">6.5.</span> Gooey</h3>
 
-<div id="org9b787e0" class="figure">
+<div id="orga10af4a" class="figure">
 <p><img src="./images/inm-seminar-nov22/gooey.png" alt="gooey.png" />
 </p>
 </div>
@@ -259,8 +248,8 @@ See: <a href="http://docs.datalad.org/projects/gooey/en/latest/">docs.datalad.or
 </section>
 </section>
 <section>
-<section id="slide-org627e495">
-<h2 id="org627e495"><span class="section-number-2">7.</span> Summary</h2>
+<section id="slide-orgfada5b0">
+<h2 id="orgfada5b0"><span class="section-number-2">7.</span> Summary</h2>
 <ul>
 <li>Distributed data management strategy
 <ul>
@@ -276,8 +265,8 @@ See: <a href="http://docs.datalad.org/projects/gooey/en/latest/">docs.datalad.or
 </section>
 </section>
 <section>
-<section id="slide-org1895dfa">
-<h2 id="org1895dfa"><span class="section-number-2">8.</span> Acknowledgements</h2>
+<section id="slide-org84d2355">
+<h2 id="org84d2355"><span class="section-number-2">8.</span> Acknowledgements</h2>
 <ul>
 <li>Psychoinformatics Group: Michael Hanke, Stephan Heunis, Christian
 Mönch, Benjamin Poldrack, Adina Wagner, Alex Waite, Laura Waite,
@@ -287,7 +276,7 @@ Małgorzata Wierzba, Leonardo Muller-Rodriguez</li>
 </ul>
 
 
-<div id="org31f01a2" class="figure">
+<div id="org39b22b3" class="figure">
 <p><img src="./images/inm-seminar-nov22/logo-banner.png" alt="logo-banner.png" />
 </p>
 </div>
@@ -295,10 +284,10 @@ Małgorzata Wierzba, Leonardo Muller-Rodriguez</li>
 </section>
 </div>
 </div>
-<script src="./reveal/dist/reveal.js"></script>
-<script src="./reveal/plugin/markdown/markdown.js"></script>
-<script src="./reveal/plugin/zoom/zoom.js"></script>
-<script src="./reveal/plugin/notes/notes.js"></script>
+<script src="./reveal.js/dist/reveal.js"></script>
+<script src="./reveal.js/plugin/markdown/markdown.js"></script>
+<script src="./reveal.js/plugin/zoom/zoom.js"></script>
+<script src="./reveal.js/plugin/notes/notes.js"></script>
 
 
 <script>

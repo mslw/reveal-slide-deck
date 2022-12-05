@@ -9,10 +9,21 @@
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" href="./reveal/dist/reveal.css"/>
+<link rel="stylesheet" href="./reveal.js/dist/reveal.css"/>
 
-<link rel="stylesheet" href="./reveal/dist/theme/beige.css" id="theme"/>
+<link rel="stylesheet" href="./reveal.js/dist/theme/beige.css" id="theme"/>
 
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
 </head>
 <body>
 <div class="reveal">
@@ -21,23 +32,23 @@
 </section>
 
 <section>
-<section id="slide-org9ca7a53">
-<h2 id="org9ca7a53"><span class="section-number-2">1.</span> DataLad in research</h2>
+<section id="slide-org134fea6">
+<h2 id="org134fea6"><span class="section-number-2">1.</span> DataLad in research</h2>
 <div class="outline-text-2" id="text-1">
 </div>
 </section>
-<section id="slide-org7888bfe">
-<h3 id="org7888bfe"><span class="section-number-3">1.1.</span> Research process</h3>
+<section id="slide-orgfa4a779">
+<h3 id="orgfa4a779"><span class="section-number-3">1.1.</span> Research process</h3>
 
-<div id="orgddebf6d" class="figure">
+<div id="orgaec2c0f" class="figure">
 <p><img src="./images/datalad-publication-mini-workshop/reproducibility.jpg" alt="reproducibility.jpg" height="600," width="848" />
 </p>
 <p><span class="figure-number">Figure 1: </span>The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807.</p>
 </div>
 
 </section>
-<section id="slide-org19f9604">
-<h3 id="org19f9604"><span class="section-number-3">1.2.</span> What is DataLad</h3>
+<section id="slide-org37e08d4">
+<h3 id="org37e08d4"><span class="section-number-3">1.2.</span> What is DataLad</h3>
 <blockquote >
 <p>
 To make it short, DataLad is a <b>software tool developed to aid with
@@ -59,13 +70,13 @@ necessary in the digital workflow of data and science.
 </section>
 </section>
 <section>
-<section id="slide-org578739a">
-<h2 id="org578739a"><span class="section-number-2">2.</span> Pillars of DataLad</h2>
+<section id="slide-org4e3e2ba">
+<h2 id="org4e3e2ba"><span class="section-number-2">2.</span> Pillars of DataLad</h2>
 <div class="outline-text-2" id="text-2">
 </div>
 </section>
-<section id="slide-org10bdc8a">
-<h3 id="org10bdc8a"><span class="section-number-3">2.1.</span> Local version control</h3>
+<section id="slide-org014399b">
+<h3 id="org014399b"><span class="section-number-3">2.1.</span> Local version control</h3>
 <ul>
 <li>Know (record for your future self)
 <ul>
@@ -80,8 +91,8 @@ necessary in the digital workflow of data and science.
 </ul>
 
 </section>
-<section id="slide-orgae20db7">
-<h3 id="orgae20db7"><span class="section-number-3">2.2.</span> Distribution</h3>
+<section id="slide-org216b083">
+<h3 id="org216b083"><span class="section-number-3">2.2.</span> Distribution</h3>
 <ul>
 <li>keep places (laptop / desktop / remote server) in sync
 <ul>
@@ -94,8 +105,8 @@ necessary in the digital workflow of data and science.
 </ul>
 
 </section>
-<section id="slide-orgd57b76e">
-<h3 id="orgd57b76e"><span class="section-number-3">2.3.</span> Provenance tracking</h3>
+<section id="slide-orgc814e6f">
+<h3 id="orgc814e6f"><span class="section-number-3">2.3.</span> Provenance tracking</h3>
 <ul>
 <li>automated run records (what program, inputs, outputs)</li>
 <li>optionally, containerized environments</li>
@@ -105,8 +116,8 @@ necessary in the digital workflow of data and science.
 </ul>
 
 </section>
-<section id="slide-org49b1bff">
-<h3 id="org49b1bff"><span class="section-number-3">2.4.</span> Metadata</h3>
+<section id="slide-org8147cfd">
+<h3 id="org8147cfd"><span class="section-number-3">2.4.</span> Metadata</h3>
 <ul>
 <li>generic representations</li>
 <li>methods to extract, aggregate, display</li>
@@ -116,13 +127,13 @@ necessary in the digital workflow of data and science.
 </section>
 </section>
 <section>
-<section id="slide-org97443dd">
-<h2 id="org97443dd"><span class="section-number-2">3.</span> Not just deposition</h2>
+<section id="slide-org07a26e7">
+<h2 id="org07a26e7"><span class="section-number-2">3.</span> Not just deposition</h2>
 <div class="outline-text-2" id="text-3">
 </div>
 </section>
-<section id="slide-orge7c082b">
-<h3 id="orge7c082b"><span class="section-number-3">3.1.</span> Reasons to move data</h3>
+<section id="slide-org1105f3d">
+<h3 id="org1105f3d"><span class="section-number-3">3.1.</span> Reasons to move data</h3>
 <ul>
 <li>backup</li>
 <li>exchange with collaborators</li>
@@ -132,8 +143,8 @@ necessary in the digital workflow of data and science.
 </ul>
 
 </section>
-<section id="slide-org7b93348">
-<h3 id="org7b93348"><span class="section-number-3">3.2.</span> Data sharing nirvana</h3>
+<section id="slide-orgbe2c729">
+<h3 id="orgbe2c729"><span class="section-number-3">3.2.</span> Data sharing nirvana</h3>
 <ul>
 <li><b>Where data go to die?</b> <i>Data archive.</i></li>
 <li><b>How data are reincarnated?</b> <i>Re-used from archives.</i></li>
@@ -145,8 +156,8 @@ necessary in the digital workflow of data and science.
 </p>
 
 </section>
-<section id="slide-org309e70b">
-<h3 id="org309e70b"><span class="section-number-3">3.3.</span> Sharing begins at home</h3>
+<section id="slide-org391fd4f">
+<h3 id="org391fd4f"><span class="section-number-3">3.3.</span> Sharing begins at home</h3>
 <blockquote >
 <p>
 Despite increasing efforts to encourage data sharing, both the
@@ -167,21 +178,21 @@ Dempsey <i>et al.</i> (2022), <a href="https://doi.org/10.1162/99608f92.44d21b86
 </section>
 </section>
 <section>
-<section id="slide-org197b4d1">
-<h2 id="org197b4d1"><span class="section-number-2">4.</span> DataLad features</h2>
+<section id="slide-org04882f1">
+<h2 id="org04882f1"><span class="section-number-2">4.</span> DataLad features</h2>
 <div class="outline-text-2" id="text-4">
 </div>
 </section>
-<section id="slide-orge71d837">
-<h3 id="orge71d837"><span class="section-number-3">4.1.</span> Everything is explicit</h3>
+<section id="slide-orgca5498e">
+<h3 id="orgca5498e"><span class="section-number-3">4.1.</span> Everything is explicit</h3>
 <pre  class="example" >
 datalad save -m "I made this"
 datalad push --to gin
 </pre>
 
 </section>
-<section id="slide-org68f70cf">
-<h3 id="org68f70cf"><span class="section-number-3">4.2.</span> Everything is versioned</h3>
+<section id="slide-orgde3df02">
+<h3 id="orgde3df02"><span class="section-number-3">4.2.</span> Everything is versioned</h3>
 <pre  class="example" >
 ❱ git log --pretty=reference
 2e98e2c ([DATALAD RUNCMD] Convert to greyscale, 2022-05-23)
@@ -198,20 +209,20 @@ No ambiguity
 </p>
 
 </section>
-<section id="slide-org1981bc0">
-<h3 id="org1981bc0"><span class="section-number-3">4.3.</span> Lightweight datasets (annex content separation)</h3>
+<section id="slide-orgf37fd13">
+<h3 id="orgf37fd13"><span class="section-number-3">4.3.</span> Lightweight datasets (annex content separation)</h3>
 
-<div id="orge2033f5" class="figure">
+<div id="org5f6e1e9" class="figure">
 <p><img src="./images/datalad-publication-mini-workshop/lightweight-datasets.png" alt="lightweight-datasets.png" />
 </p>
 <p><span class="figure-number">Figure 2: </span>Share datasets without content (metadata) to balance privacy and visibility (drawing: Stephan Heunis)</p>
 </div>
 
 </section>
-<section id="slide-org9fe9966">
-<h3 id="org9fe9966"><span class="section-number-3">4.4.</span> Decentralization built in</h3>
+<section id="slide-orgc79453e">
+<h3 id="orgc79453e"><span class="section-number-3">4.4.</span> Decentralization built in</h3>
 
-<div id="org9c058b2" class="figure">
+<div id="orgc3dec89" class="figure">
 <p><img src="./images/datalad-publication-mini-workshop/drawing-distributed.png" alt="drawing-distributed.png" />
 </p>
 </div>
@@ -227,10 +238,10 @@ git annex whereis this/file.dat
 </section>
 </div>
 </div>
-<script src="./reveal/dist/reveal.js"></script>
-<script src="./reveal/plugin/markdown/markdown.js"></script>
-<script src="./reveal/plugin/zoom/zoom.js"></script>
-<script src="./reveal/plugin/notes/notes.js"></script>
+<script src="./reveal.js/dist/reveal.js"></script>
+<script src="./reveal.js/plugin/markdown/markdown.js"></script>
+<script src="./reveal.js/plugin/zoom/zoom.js"></script>
+<script src="./reveal.js/plugin/notes/notes.js"></script>
 
 
 <script>

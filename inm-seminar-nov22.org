@@ -6,7 +6,6 @@
 #+REVEAL_INIT_OPTIONS: width:1400, height:1000, margin: 0.1, minScale:0.2, maxScale:2.5
 #+OPTIONS: toc:nil
 #+REVEAL_THEME: beige
-#+REVEAL_ROOT: ./reveal
 
 #+REVEAL_TITLE_SLIDE: <h1>%t</h1><h2>%s</h2><h3>%a</h3><p>%d</p>
 
