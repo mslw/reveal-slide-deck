@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Research Data Management with DataLad</title>
+<meta name="author" content="Michał Szczepanik"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/beige.css" id="theme"/>
+
+<link rel="stylesheet" href="./local.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<meta name="description" content="About DataLad">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+<section>
+<section id="slide-org273e88b">
+<h2 id="org273e88b"><span class="section-number-2">1.</span> Research process</h2>
+<img src="https://the-turing-way.netlify.app/_images/reproducibility.jpg" class="r-stretch">
+<p>
+The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: <a href="https://doi.org/10.5281/zenodo.3332807">10.5281/zenodo.3332807</a>.
+</p>
+
+</section>
+<section id="slide-org6028272">
+<h3 id="org6028272"><span class="section-number-3">1.1.</span> Distributed research data management</h3>
+<img src="https://datasets.datalad.org/centerforopenneuroscience/talks/pics/decentral_RDM_overview.png" class="r-stretch">
+
+</section>
+<section id="slide-org7ec7712">
+<h3 id="org7ec7712"><span class="section-number-3">1.2.</span> DataLad</h3>
+<p>
+To make it short, DataLad is a <b>software tool developed to aid with
+everything related to the evolution of digital objects</b>.
+</p>
+
+<p>
+It is not only keeping track of code, it is not only keeping track of
+data, it is not only making sharing, retrieving and linking data (and
+metadata) easy, but it assists with the combination of all things
+necessary in the digital workflow of data and science.
+</p>
+
+<p>
+<a href="http://handbook.datalad.org/en/latest/intro/philosophy.html">DataLad Handbook</a>
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+width:1200, height:800, margin: 0.1, minScale:0.2, maxScale:2.5,
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+
+</script>
+</body>
+</html>

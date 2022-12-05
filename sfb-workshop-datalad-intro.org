@@ -1,0 +1,30 @@
+#+title: Research Data Management with DataLad
+#+Author: Michał Szczepanik
+
+#+REVEAL_INIT_OPTIONS: width:1200, height:800, margin: 0.1, minScale:0.2, maxScale:2.5
+#+OPTIONS: toc:nil, reveal_title_slide:nil
+#+REVEAL_THEME: beige
+#+REVEAL_HLEVEL: 1
+#+REVEAL_HEAD_PREAMBLE: <meta name="description" content="About DataLad">
+#+REVEAL_EXTRA_CSS: ./local.css
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+
+* Research process
+
+#+REVEAL_HTML: <img src="https://the-turing-way.netlify.app/_images/reproducibility.jpg" class="r-stretch">
+The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: [[https://doi.org/10.5281/zenodo.3332807][10.5281/zenodo.3332807]].
+
+** Distributed research data management
+ #+REVEAL_HTML: <img src="https://datasets.datalad.org/centerforopenneuroscience/talks/pics/decentral_RDM_overview.png" class="r-stretch">
+
+** DataLad
+
+To make it short, DataLad is a *software tool developed to aid with
+everything related to the evolution of digital objects*.
+
+It is not only keeping track of code, it is not only keeping track of
+data, it is not only making sharing, retrieving and linking data (and
+metadata) easy, but it assists with the combination of all things
+necessary in the digital workflow of data and science.
+
+[[http://handbook.datalad.org/en/latest/intro/philosophy.html][DataLad Handbook]]
