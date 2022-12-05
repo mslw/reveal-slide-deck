@@ -1,1 +1,1 @@
-reveal/gulpfile.js
+reveal.js/gulpfile.js
