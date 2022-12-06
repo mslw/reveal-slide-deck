@@ -1,0 +1,16 @@
+#+title: My slide deck
+#+author: Michał Szczepanik
+
+* Presentations
+- Publishing datasets with DataLad. /SFB1451 mini-workshop/ (23 Nov 2022): [[./datalad-publication-mini-workshop.html][html]]
+- Distributed data and DataLad. /INM7 seminar/ (17 Nov 2022): [[./inm-seminar-nov22.html][html]]
+- Workshop intro for RDM with DataLad. /Literally 3 slides/ (10 Nov 2022): [[./sfb-workshop-datalad-intro.html][html]]
+- Research data management with DataLad. /SFB1451 PI workshop/ (19 Aug 2022): [[./pi-workshop.html][html]]
+
+* About
+These slides are made with [[https://revealjs.com/][reveal.js]].
+Most of the presentations were written using [[https://orgmode.org/][Org Mode]] and exported to html with [[https://github.com/yjwen/org-reveal/][Org-Reveal]].
+The org & html sources are in [[https://github.com/mslw/reveal-slide-deck][this GitHub repo]].
+
+To [[https://revealjs.com/pdf-export/][export slides as pdf]] you can append =?print-pdf= to the presentation URL, and use print to PDF from your browser.
+Unfortunately, this works well only on chromium-based browsers.
